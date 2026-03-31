@@ -43,7 +43,7 @@ For each test case, print YES (case-insensitive), if the array can be sorted in 
 #include <algorithm>
 using namespace std;
 
-int main()
+void solve()
 {
     int n, k;
     cin >> n >> k;
@@ -66,6 +66,16 @@ int main()
         {
             cout << "NO" << endl;
         }
+    }
+}
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        solve();
     }
     return 0;
 }
